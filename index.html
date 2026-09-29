@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BIG BITE — menu, phone and location in Warsaw">
+  <meta name="theme-color" content="#f7ecd8">
+  <title>BIG BITE — Menu</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #f7ecd8;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #111;
+    }
+    .page {
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 18px;
+    }
+    .menu {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+    .phone, .location {
+      display: block;
+      width: fit-content;
+      max-width: 100%;
+      margin: 14px auto 8px;
+      padding: 13px 22px;
+      border-radius: 8px;
+      text-decoration: none;
+      text-align: center;
+      font-weight: 700;
+    }
+    .phone {
+      background: #111;
+      color: white;
+      font-size: 20px;
+    }
+    .location {
+      color: #111;
+      font-size: 18px;
+      background: rgba(255,255,255,.45);
+    }
+    .phone:hover, .location:hover {
+      opacity: .9;
+    }
+    .call-text {
+      text-align: center;
+      margin: 0 0 12px;
+      font-size: 14px;
+    }
+    @media (max-width: 600px) {
+      .page { padding: 8px; }
+      .phone { font-size: 18px; }
+      .location { font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <img class="menu" src="menu.jpg" alt="BIG BITE menu">
+
+    <a class="phone" href="tel:+48606439753">
+      📞 606 439 753
+    </a>
+
+    <p class="call-text">Kliknij numer, aby zadzwonić</p>
+
+    <a
+      class="location"
+      href="https://www.google.com/maps/search/?api=1&query=150+al.+Niepodleg%C5%82o%C5%9Bci%2C+Warszawa"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      📍 150 al. Niepodległości, Warszawa
+    </a>
+  </main>
+</body>
+</html>
